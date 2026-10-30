@@ -1,0 +1,1 @@
+CREATE TABLE wallets(wallet_id SERIAL PRIMARY KEY,user_id INT UNIQUE REFERENCES users(user_id),wallet_balance NUMERIC(12,2),wallet_status VARCHAR(20),cashback_balance NUMERIC(12,2),created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);

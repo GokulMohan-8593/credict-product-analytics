@@ -1,0 +1,1 @@
+CREATE TABLE transactions(transaction_id BIGSERIAL PRIMARY KEY,wallet_id INT REFERENCES wallets(wallet_id),user_id INT REFERENCES users(user_id),merchant_name VARCHAR(100),merchant_category VARCHAR(100),amount NUMERIC(12,2),payment_method VARCHAR(30),transaction_type VARCHAR(30),transaction_status VARCHAR(30),transaction_time TIMESTAMP);

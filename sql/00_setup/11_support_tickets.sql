@@ -1,0 +1,1 @@
+CREATE TABLE support_tickets(ticket_id SERIAL PRIMARY KEY,user_id INT REFERENCES users(user_id),issue_category VARCHAR(100),priority VARCHAR(20),status VARCHAR(30),created_at TIMESTAMP,resolved_at TIMESTAMP,resolution_hours NUMERIC(8,2));

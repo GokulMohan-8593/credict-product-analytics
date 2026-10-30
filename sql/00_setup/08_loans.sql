@@ -1,0 +1,1 @@
+CREATE TABLE loans(loan_id SERIAL PRIMARY KEY,user_id INT REFERENCES users(user_id),loan_amount NUMERIC(12,2),interest_rate NUMERIC(5,2),tenure_months INT,emi NUMERIC(12,2),processing_fee NUMERIC(12,2),loan_status VARCHAR(30),approved_at TIMESTAMP,disbursed_at TIMESTAMP,closed_at TIMESTAMP);

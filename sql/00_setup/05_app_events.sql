@@ -1,0 +1,1 @@
+CREATE TABLE app_events(event_id BIGSERIAL PRIMARY KEY,session_id BIGINT REFERENCES sessions(session_id),user_id INT REFERENCES users(user_id),event_name VARCHAR(100),screen_name VARCHAR(100),button_name VARCHAR(100),event_timestamp TIMESTAMP,time_spent_seconds INT);

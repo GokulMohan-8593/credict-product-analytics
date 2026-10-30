@@ -1,0 +1,23 @@
+﻿# Credentials
+.env
+
+# Raw/generated data (reproducible via data/generate)
+data/*.csv
+data/*.parquet
+data/raw/
+data/processed/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

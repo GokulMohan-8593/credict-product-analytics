@@ -1,0 +1,1 @@
+CREATE TABLE notifications(notification_id SERIAL PRIMARY KEY,user_id INT REFERENCES users(user_id),campaign_name VARCHAR(100),notification_type VARCHAR(30),sent_at TIMESTAMP,opened_at TIMESTAMP,clicked_at TIMESTAMP);

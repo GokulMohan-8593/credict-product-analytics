@@ -1,0 +1,1 @@
+CREATE TABLE loan_repayments(repayment_id SERIAL PRIMARY KEY,loan_id INT REFERENCES loans(loan_id),due_date DATE,payment_date DATE,amount_due NUMERIC(12,2),amount_paid NUMERIC(12,2),late_fee NUMERIC(12,2),repayment_status VARCHAR(30));
